@@ -1,0 +1,105 @@
+* {
+    margin: 0%;
+    color: rgb(255, 255, 255);
+    font-family: 'Rubik Mono One', 'Regular 400';
+    font-size: 16px;
+}
+
+.container {
+    /* background-color: rgb(110, 110, 110); */
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 300px;
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, 50%);
+}
+
+.scoreone {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.playerone {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.scoretwo {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.playertwo {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+
+/* SCORE ONE */
+
+.scoreone {
+    margin-top: 50%;
+    margin-bottom: 15%;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+
+}
+
+.scoreone-border {
+    text-align: center;
+    width: fit-content;
+    background-color: rgb(0, 0, 0);
+    border: 15px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.playerone {
+    /* align-self: center; */
+    justify-content: center;
+    text-align: center;
+    display: flex;
+
+}
+
+.player-border {
+    height: fit-content;
+    width: 60%;
+    background-color: rgb(0, 0, 0);
+    border: 15px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+
+/* PLAYER TWO */
+
+.scoretwo {
+    margin-top: 50%;
+    margin-bottom: 15%;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+
+}
+
+.scoretwo-border {
+    text-align: center;
+    width: fit-content;
+    background-color: rgb(0, 0, 0);
+    border: 15px solid rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.playertwo {
+    /* align-self: center; */
+    justify-content: center;
+    text-align: center;
+    display: flex;
+
+}
+
+.playertwo-border {
+    height: fit-content;
+    width: 60%;
+    background-color: white;
+    border: 15px solid white;
+    border-radius: 10px;
+}
