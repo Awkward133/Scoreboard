@@ -13,6 +13,10 @@ print(socketio.async_mode)
 def home():
     return render_template("index.html")
 
+@app.route("/admin")
+def admin():
+    return render_template("admin.html")
+
 def socketio_thread():
     socketio.run(app)
 
@@ -25,7 +29,7 @@ player_two_score = 0
 while True:
     time.sleep(0.1)
     try:
-        if keyboard.is_pressed('f21'):
+        if keyboard.is_pressed('f12'):
             player_one_score += 1
             socketio.emit('score1', {'player_one_score': f"{player_one_score}"})
             time.sleep(0.5)
@@ -55,5 +59,8 @@ while True:
             socketio.emit('fadein')
             time.sleep(0.5)
         
+
+
+
     except KeyboardInterrupt:
         break
