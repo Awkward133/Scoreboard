@@ -58,7 +58,9 @@ $(document).ready(function () {
                 opacity: 1,
             }, 300);
         }, "300");
+        console.log("Fading in");
     };
+
     fadein()
 
     socket.on('reset', function (msg, cb) {
@@ -69,5 +71,37 @@ $(document).ready(function () {
         fadein()
     });
 
+    window.scoreup1 = function () {
+        socket.emit("scoreup1");
+    };
 
+    window.scoredown1 = function () {
+        socket.emit("scoredown1")
+    }
+
+    window.scoreup2 = function () {
+        socket.emit("scoreup2");
+    };
+
+    window.scoredown2 = function () {
+        socket.emit("scoredown2")
+    }
+
+    window.hide = function () {
+        socket.emit("hide");
+    };
+
+    window.reload = function () {
+        socket.emit("reset");
+    }
+
+    window.fadein = function () {
+        socket.emit("fadein");
+    }
+
+    window.fullreset = function () {
+        socket.emit("hide");
+        socket.emit("reset");
+    }
 });
+

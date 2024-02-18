@@ -1,12 +1,13 @@
 * {
     margin: 0%;
     color: rgb(255, 255, 255);
-    font-family: 'Rubik Mono One', 'Regular 400';
+    font-family: 'Rubik Mono One', 'Regular 400', 'Arial';
     font-size: 16px;
+    /* background-color: rgb(110, 110, 110); */
 }
 
 .container {
-    /* background-color: rgb(110, 110, 110); */
+
     max-width: 300px;
     min-width: 300px;
     max-height: 300px;
@@ -102,4 +103,75 @@
     background-color: white;
     border: 15px solid white;
     border-radius: 10px;
+}
+
+/* CONTROLS */
+.bgcontainer {
+    background-color: grey;
+
+}
+
+.controlcontainer {
+    display: inline-flex;
+    min-height: 50%;
+    min-width: 50%;
+    margin: 0% 15% 0% 15%;
+    padding: 10% 10% 3% 10%;
+    background: rgb(0, 0, 128);
+    align-items: center;
+    justify-items: center;
+
+}
+
+.allcontrolcontainer {
+    display: inline-flex;
+    min-height: 50%;
+    min-width: 50%;
+    margin: 0% 15% 15% 15%;
+    padding: 3% 10% 10% 10%;
+    background: rgb(0, 0, 128);
+    align-items: center;
+    justify-items: center;
+}
+
+.user {
+    padding: 5px;
+    min-width: 50%;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.toptext {
+    color: rgb(0, 168, 8);
+    display: block;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.scorebuttons {
+    margin-top: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.boardoptions {
+    display: inline-flex;
+    min-width: 100%;
+    min-height: 20%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.optionbuttons {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
